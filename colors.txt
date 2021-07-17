@@ -1,0 +1,112 @@
+#ef7f39 heaxa logo
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+
+/*------WELCOME-----*/
+.welcomeContenedor{
+    display: flex;
+    background-color:black;
+    justify-content: center;
+    align-items: center;
+    height:925px;
+    width: 100%;
+}
+
+.welcomeArticleContenedor{
+    height: 30%;
+    width: 30%;
+    
+}
+.welcomeDivContenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.welcomeImg{
+    height: 100%;
+    width: 100%;
+}
+.welcomeImg img{
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+}
+.welcomeImg img:hover{
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+.welcomeHdos{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.welcomeHdos h2{
+    height: max-content;
+}
+
+/*------HOME-----*/
+
+.header{
+    display: flex;
+    background: black;
+    height: 8rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: white 5px 5px 15px ;
+}
+.logoContenedor{
+    display: inline-flex;
+    height: 100%;
+    width: 20%;
+}
+
+.navContenedor{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.navUl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10rem;
+    height: 40%;
+    width: 50%;
+}
+.navUL a{
+    text-decoration: none;
+}
+.navUl li{
+    list-style: none;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform:capitalize;
+}
+.navUl li:hover{
+    color:rgb(255, 187, 0);
+    transition: 1s;
+}
+.divContenedorIdx{
+    background-color: #193C40;
+    width: 100%;
+    height: 100rem;
+}

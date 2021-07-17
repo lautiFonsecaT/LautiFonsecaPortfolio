@@ -1,0 +1,594 @@
+.divContenedorIdx .footer, .contenedorSobreMi .footer, .contenedorProyecto .footer, .contenedorContacto .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: black;
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: inherit; }
+
+a {
+  text-decoration: none; }
+
+html {
+  overflow-x: hidden; }
+
+.welcomeContenedor {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 925px;
+  width: 100%; }
+  .welcomeContenedor .welcomeArticleContenedor {
+    height: 30%;
+    width: 30%; }
+    .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeImg {
+        height: 100%;
+        width: 100%; }
+      .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeImg img {
+        border-radius: 100%;
+        height: 100%;
+        width: 100%; }
+      .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeImg img:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1s; }
+      .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeHdos {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        font-family: "Yanone Kaffeesatz", sans-serif; }
+        .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeHdos .welcomeHdos h2 {
+          height: max-content; }
+
+.header {
+  display: flex;
+  background: black;
+  height: 8rem;
+  width: 100%;
+  overflow: hidden; }
+  .header .logoContenedor {
+    display: inline-flex;
+    height: 100%;
+    width: 20%; }
+  .header .navContenedor {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 80%; }
+    .header .navContenedor .navUl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10rem;
+      height: 40%;
+      width: 50%; }
+    .header .navContenedor .navUL a {
+      text-decoration: none; }
+    .header .navContenedor .navUl li {
+      list-style: none;
+      color: white;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-family: "Sulphur Point", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: capitalize; }
+    .header .navContenedor .navUl li:hover {
+      color: #ffbb00;
+      transition: 1s; }
+
+.divContenedorIdx {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-areas: "bienvenida" "descripcion" "footer";
+  background-color: #193C40;
+  width: 100%;
+  height: 100rem; }
+  .divContenedorIdx .articleSaludo {
+    grid-area: bienvenida;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .divContenedorIdx .articleSaludo .sectionSaludo {
+      display: flex;
+      background: linear-gradient(to bottom, black, #193C40);
+      border-radius: 1rem;
+      height: 50%;
+      width: 60%;
+      justify-content: space-between;
+      align-items: center; }
+      .divContenedorIdx .articleSaludo .sectionSaludo .imgSaludo {
+        height: 100%;
+        width: 60%;
+        --animate-duration: 1.8s;
+        animation-delay: 2s;
+        animation-iteration-count: 2; }
+        .divContenedorIdx .articleSaludo .sectionSaludo .imgSaludo img {
+          width: 100%;
+          height: 100%; }
+      .divContenedorIdx .articleSaludo .sectionSaludo .pSaludo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5rem;
+        width: 50%;
+        height: 100%;
+        font-family: "Sulphur Point", sans-serif;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: white;
+        text-align: left;
+        width: 30%;
+        right: 20rem; }
+  .divContenedorIdx .sectionDescripcion {
+    grid-area: descripcion;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+    .divContenedorIdx .sectionDescripcion div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15%;
+      height: 50%;
+      width: 50%; }
+      .divContenedorIdx .sectionDescripcion div h2 {
+        height: 25%;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: #ffbb00;
+        font-size: 5rem;
+        font-weight: bold; }
+      .divContenedorIdx .sectionDescripcion div p {
+        height: 75%;
+        font-size: 2rem;
+        font-family: "Sulphur Point", sans-serif;
+        color: white;
+        text-align: center; }
+  .divContenedorIdx .footer .sectionImgFooter {
+    height: 65%;
+    width: 40%; }
+    .divContenedorIdx .footer .sectionImgFooter img {
+      height: 100%;
+      width: 100%; }
+  .divContenedorIdx .footer .sectionHDosFooter {
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    text-align: center;
+    font-size: 1rem; }
+
+.contenedorSobreMi {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-areas: "articleSobreMi__Uno" "articleSobreMi__Dos" "footer";
+  background-color: #193C40;
+  row-gap: 2rem; }
+  .contenedorSobreMi .sobreMi__uno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: articleSobreMi__Uno;
+    height: 100%;
+    width: 100%; }
+    .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 80%; }
+      .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiImg__uno {
+        height: 60%;
+        width: 50%;
+        animation-delay: 1s; }
+        .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiImg__uno img {
+          height: 100%;
+          width: 100%; }
+      .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno {
+        padding-top: 14rem;
+        height: 100%;
+        width: 50%; }
+        .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno h2 {
+          font-size: 4rem;
+          font-family: "Yanone Kaffeesatz", sans-serif;
+          color: #ffbb00; }
+        .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno p {
+          font-size: 2rem;
+          font-family: "Sulphur Point", sans-serif;
+          color: white; }
+  .contenedorSobreMi .sobreMi__dos {
+    grid-area: articleSobreMi__Dos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+    .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 80%;
+      overflow: hidden; }
+      .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos {
+        height: 100%;
+        width: 50%; }
+        .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos h2 {
+          font-size: 4rem;
+          font-family: "Yanone Kaffeesatz", sans-serif;
+          color: #ffbb00; }
+        .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos p {
+          font-size: 2rem;
+          font-family: "Sulphur Point", sans-serif;
+          color: white; }
+      .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiImg__dos {
+        display: flex;
+        justify-content: center;
+        height: 60%;
+        width: 30%;
+        animation-delay: 1.5s; }
+        .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiImg__dos img {
+          display: inline-block;
+          position: relative;
+          left: 5rem;
+          height: 100%;
+          width: 100%; }
+  .contenedorSobreMi .footer .sectionImgFooter {
+    height: 70%;
+    width: 40%; }
+    .contenedorSobreMi .footer .sectionImgFooter img {
+      height: 100%;
+      width: 100%; }
+  .contenedorSobreMi .footer .sectionHDosFooter {
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    text-align: center;
+    font-size: 0.7rem; }
+
+.contenedorProyecto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "main" "footer";
+  background-color: #193C40; }
+  .contenedorProyecto .mainContenedorProyecto {
+    grid-area: main;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+    .contenedorProyecto .mainContenedorProyecto .articleContenedor {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      display: flex;
+      height: 70%;
+      width: 70%;
+      align-items: center; }
+      .contenedorProyecto .mainContenedorProyecto .articleContenedor .imgProyecto {
+        height: 90%;
+        width: 50%;
+        animation-delay: 1s;
+        animation-duration: 1s; }
+        .contenedorProyecto .mainContenedorProyecto .articleContenedor .imgProyecto img {
+          width: 100%;
+          height: 100%;
+          border-radius: 4%; }
+      .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto {
+        display: flex;
+        padding-right: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 50%; }
+        .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto h2 {
+          font-family: "Yanone Kaffeesatz", sans-serif;
+          text-transform: capitalize;
+          color: #ffbb00;
+          font-size: 4rem; }
+        .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto p {
+          font-family: "Sulphur Point", sans-serif;
+          color: white;
+          font-size: 1.9rem; }
+  .contenedorProyecto .footer .sectionImgFooter {
+    height: 70%;
+    width: 40%; }
+    .contenedorProyecto .footer .sectionImgFooter img {
+      height: 100%;
+      width: 100%; }
+  .contenedorProyecto .footer .sectionHDosFooter {
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    text-align: center;
+    font-size: 0.9rem; }
+
+.contenedorContacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "main" "footer";
+  background-color: #193C40; }
+  .contenedorContacto .mainContacto {
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+    align-items: center; }
+    .contenedorContacto .mainContacto .formContacto {
+      background: linear-gradient(to bottom, #ffbb00, #193C40);
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      border-radius: 2%;
+      height: 60%;
+      width: 60%; }
+      .contenedorContacto .mainContacto .formContacto h2 {
+        margin-left: 1rem;
+        font-size: 2rem;
+        color: white;
+        font-family: "Yanone Kaffeesatz", sans-serif; }
+      .contenedorContacto .mainContacto .formContacto .form-control {
+        width: 89%;
+        margin-left: 1rem;
+        background-color: #ffffff26;
+        border: #ffffff26; }
+      .contenedorContacto .mainContacto .formContacto .form-label {
+        margin-left: 1rem; }
+  .contenedorContacto .footer .sectionImgFooter {
+    height: 70%;
+    width: 40%; }
+    .contenedorContacto .footer .sectionImgFooter img {
+      display: inline-block;
+      position: relative;
+      height: 120%;
+      width: 100%; }
+  .contenedorContacto .footer .sectionHDosFooter {
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    text-align: center; }
+    .contenedorContacto .footer .sectionHDosFooter h2 {
+      font-size: 0.9rem; }
+
+@media only screen and (max-width: 360px) {
+  body {
+    overflow-x: hidden; }
+  .welcomeContenedor {
+    height: 40rem;
+    width: 100%; }
+    .welcomeContenedor .welcomeArticleContenedor .welcomeDivContenedor .welcomeImg {
+      width: 20rem; }
+  .header {
+    height: 5.25rem; }
+    .header .logoContenedor {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 100%;
+      width: 40%; }
+      .header .logoContenedor img {
+        height: 75%;
+        width: 75%; }
+    .header .navContenedor {
+      width: 60%;
+      right: 7rem; }
+      .header .navContenedor .navUl li {
+        list-style: none;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: "Sulphur Point", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 1.05rem; }
+  .divContenedorIdx {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas: "bienvenida" "descripcion" "footer"; }
+    .divContenedorIdx .articleSaludo {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .divContenedorIdx .articleSaludo .sectionSaludo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 80%; }
+        .divContenedorIdx .articleSaludo .sectionSaludo .imgSaludo {
+          width: 120%;
+          height: 50%; }
+        .divContenedorIdx .articleSaludo .sectionSaludo .pSaludo {
+          padding: 0;
+          height: 50%;
+          width: 100%;
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 1.7rem; }
+    .divContenedorIdx .sectionDescripcion {
+      grid-area: descripcion;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      justify-content: start;
+      align-items: center; }
+      .divContenedorIdx .sectionDescripcion div {
+        height: 80%;
+        width: 70%; }
+        .divContenedorIdx .sectionDescripcion div h2 {
+          font-size: 4rem; }
+        .divContenedorIdx .sectionDescripcion div p {
+          font-size: 1.5rem; }
+    .divContenedorIdx .footer {
+      grid-area: footer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background-color: black; }
+      .divContenedorIdx .footer .sectionImgFooter {
+        height: 50%;
+        width: 120%; }
+        .divContenedorIdx .footer .sectionImgFooter img {
+          right: 0rem;
+          height: 100%;
+          width: 100%; }
+      .divContenedorIdx .footer .sectionHDosFooter {
+        height: 50%;
+        width: 50%;
+        color: white;
+        font-family: "Sulphur Point", sans-serif;
+        text-align: center;
+        font-size: 0.7rem; }
+  .contenedorSobreMi {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-areas: "articleSobreMi__Uno" "articleSobreMi__Dos" "footer";
+    background-color: #193C40;
+    row-gap: 2rem; }
+    .contenedorSobreMi .sobreMi__uno {
+      grid-area: articleSobreMi__Uno;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%; }
+        .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiImg__uno {
+          height: 100%;
+          width: 50%; }
+          .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiImg__uno img {
+            display: inline-block;
+            position: relative;
+            height: 80%;
+            top: 6rem;
+            right: 6rem;
+            width: 200%; }
+        .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno {
+          display: inline-block;
+          position: relative;
+          bottom: 2rem;
+          height: 100%;
+          width: 50%; }
+          .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno h2 {
+            font-family: "Yanone Kaffeesatz", sans-serif;
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: #ffbb00; }
+          .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno p {
+            font-family: "Sulphur Point", sans-serif;
+            font-size: 1rem;
+            color: white; }
+    .contenedorSobreMi .sobreMi__dos {
+      display: flex;
+      align-items: center;
+      grid-area: articleSobreMi__Dos; }
+      .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 100%; }
+        .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos {
+          height: 100%;
+          width: 50%;
+          padding-left: 1rem; }
+          .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos h2 {
+            font-family: "Yanone Kaffeesatz", sans-serif;
+            font-size: 2rem;
+            color: #ffbb00; }
+          .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiDescrip__dos p {
+            font-family: "Sulphur Point", sans-serif;
+            font-size: 1rem;
+            color: white; }
+        .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiImg__dos {
+          display: inline-block;
+          position: relative;
+          right: 4rem;
+          height: 50%;
+          width: 50%; }
+          .contenedorSobreMi .sobreMi__dos .sectionSobreMi__dos .sobreMiImg__dos img {
+            height: 100%;
+            width: 90%; }
+    .contenedorSobreMi .footer .sectionImgFooter {
+      height: 50%;
+      width: 120%; }
+      .contenedorSobreMi .footer .sectionImgFooter img {
+        right: 0rem;
+        height: 100%;
+        width: 100%; }
+    .contenedorSobreMi .footer .sectionHDosFooter {
+      height: 50%;
+      width: 50%;
+      color: white;
+      font-family: "Sulphur Point", sans-serif;
+      text-align: center;
+      font-size: 0.7rem; }
+  .contenedorProyecto .mainContenedorProyecto .articleContenedor {
+    justify-content: center;
+    flex-direction: column; }
+    .contenedorProyecto .mainContenedorProyecto .articleContenedor .imgProyecto {
+      height: 60%;
+      width: 90%; }
+    .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto {
+      padding-left: 1rem;
+      padding-top: 2rem;
+      height: 50%;
+      width: 70%; }
+      .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto h2 {
+        font-size: 3rem; }
+      .contenedorProyecto .mainContenedorProyecto .articleContenedor .descripProyecto p {
+        font-size: 1.4rem; }
+  .contenedorProyecto .footer .sectionImgFooter {
+    height: 50%;
+    width: 110%; }
+    .contenedorProyecto .footer .sectionImgFooter img {
+      right: 0rem;
+      height: 100%;
+      width: 100%; }
+  .contenedorContacto .mainContacto .formContacto {
+    height: 70%;
+    width: 80%; }
+    .contenedorContacto .mainContacto .formContacto .form-control {
+      width: 80%; }
+  .contenedorContacto .footer .sectionImgFooter {
+    width: 120%; } }

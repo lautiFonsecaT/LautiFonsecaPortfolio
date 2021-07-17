@@ -1,0 +1,11 @@
+%extendFooter{
+    display: flex;
+    flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        grid-area: footer;
+        background-color: $colorFondoHeaderFooter;
+        overflow: hidden;
+        height: 100%;
+        width: 100%; 
+}
