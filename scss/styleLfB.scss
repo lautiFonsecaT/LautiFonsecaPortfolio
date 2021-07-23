@@ -217,6 +217,14 @@ html{
                 font-family: $fuentePrincipal;
                 color: $colorLetrasDefault;
                 text-align: center;
+
+                a{
+                    color:$colorLetrasDefault;
+                }
+                a:hover{
+                    color: $colorVarianteTitulos;
+                    transition: 1s;
+                }
                 
             }
         }
@@ -306,7 +314,15 @@ html{
                     p{
                         font-size: 2rem;
                         font-family: $fuentePrincipal;
-                        color: $colorLetrasDefault
+                        color: $colorLetrasDefault;
+
+                        a{
+                            color:$colorLetrasDefault
+                        }
+                        a:hover{
+                            color: $colorVarianteTitulos;
+                            transition: 1s;
+                        }
                     }
                 }
             }
@@ -492,9 +508,9 @@ html{
 
         }
          
-              ////contacto///
-       }
-       .contenedorContacto{
+    }
+    ////contacto///
+    .contenedorContacto{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 70% 30%;
@@ -535,11 +551,28 @@ html{
                 .form-label{
                     margin-left: 1rem;
                 }
+                .buttonSubmit{
+                    display: flex;
+                    height: 3rem;
+                    width: 10rem;
+                    align-items:center ;
+                    justify-content: center;
+                    button{
+                        width: 50%;
+                        color: rgba(255, 255, 255, 0.912);
+                        border-radius: 15px;
+                        border: 1px solid rgba(0, 0, 0, 0.522);
+                        font-family: "Sulphur Point", sans-serif;
+                        font-weight: bold;
+                        background-color: rgba(0, 0, 0, 0.446);
+                        }
+                    }
+                }
+ 
             }
             
-        }
-        .footer{
-        
+            .footer{
+                
             @extend %extendFooter;
             .sectionImgFooter{
                 height: 70%;
@@ -561,14 +594,16 @@ html{
                 font-family:$fuentePrincipal;
                 text-align: center;
                 h2{
-
+                    
                     font-size: 0.9rem;
                 }
             }
-    
-    
+            
+            
         }
     }
+
+    
 
 
 
@@ -921,6 +956,9 @@ html{
     
                 .form-control{
                     width: 80%;
+                }
+                .buttonSubmit{
+                    width: auto;
                 }
             }
         }
