@@ -167,6 +167,11 @@ html {
         font-family: "Sulphur Point", sans-serif;
         color: white;
         text-align: center; }
+        .divContenedorIdx .sectionDescripcion div p a {
+          color: white; }
+        .divContenedorIdx .sectionDescripcion div p a:hover {
+          color: #ffbb00;
+          transition: 1s; }
   .divContenedorIdx .footer .sectionImgFooter {
     height: 65%;
     width: 40%; }
@@ -220,6 +225,11 @@ html {
           font-size: 2rem;
           font-family: "Sulphur Point", sans-serif;
           color: white; }
+          .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno p a {
+            color: white; }
+          .contenedorSobreMi .sobreMi__uno .sectionSobreMi__uno .sobreMiDescrip__uno p a:hover {
+            color: #ffbb00;
+            transition: 1s; }
   .contenedorSobreMi .sobreMi__dos {
     grid-area: articleSobreMi__Dos;
     display: flex;
@@ -362,6 +372,20 @@ html {
         border: #ffffff26; }
       .contenedorContacto .mainContacto .formContacto .form-label {
         margin-left: 1rem; }
+      .contenedorContacto .mainContacto .formContacto .buttonSubmit {
+        display: flex;
+        height: 3rem;
+        width: 10rem;
+        align-items: center;
+        justify-content: center; }
+        .contenedorContacto .mainContacto .formContacto .buttonSubmit button {
+          width: 50%;
+          color: rgba(255, 255, 255, 0.912);
+          border-radius: 15px;
+          border: 1px solid rgba(0, 0, 0, 0.522);
+          font-family: "Sulphur Point", sans-serif;
+          font-weight: bold;
+          background-color: rgba(0, 0, 0, 0.446); }
   .contenedorContacto .footer .sectionImgFooter {
     height: 70%;
     width: 40%; }
