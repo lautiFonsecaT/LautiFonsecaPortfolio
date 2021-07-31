@@ -187,6 +187,22 @@ html {
         .divContenedorIdx .sectionDescripcion div p a:hover {
           color: #ffbb00;
           transition: 1s; }
+<<<<<<< HEAD
+=======
+  .divContenedorIdx .footer .sectionImgFooter {
+    height: 65%;
+    width: 40%; }
+    .divContenedorIdx .footer .sectionImgFooter img {
+      height: 100%;
+      width: 100%; }
+  .divContenedorIdx .footer .sectionHDosFooter {
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    text-align: center;
+    font-size: 1rem; }
+>>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
 
 .contenedorSobreMi {
   display: grid;
@@ -355,6 +371,7 @@ html {
           font-family: "Sulphur Point", sans-serif;
           font-weight: bold;
           background-color: rgba(0, 0, 0, 0.446); }
+<<<<<<< HEAD
 
 .contenedorError {
   display: flex;
@@ -381,6 +398,17 @@ html {
 
 @media only screen and (max-width: 1024px) {
   .contenedorProyecto .mainContenedorProyecto .articleContenedor {
+=======
+  .contenedorContacto .footer .sectionImgFooter {
+    height: 70%;
+    width: 40%; }
+    .contenedorContacto .footer .sectionImgFooter img {
+      display: inline-block;
+      position: relative;
+      height: 120%;
+      width: 100%; }
+  .contenedorContacto .footer .sectionHDosFooter {
+>>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
     height: 50%;
     width: 80%; } }
 
@@ -912,9 +940,14 @@ html {
       width: 80%; }
     .contenedorContacto .mainContacto .formContacto .buttonSubmit {
       width: auto; }
+<<<<<<< HEAD
   .footer .sectionImgFooter {
     width: 120%; }
   .contenedorError .descripcionError h1 {
     font-size: 5rem; }
   .contenedorError .descripcionError h2 {
     font-size: 1.5rem; } }
+=======
+  .contenedorContacto .footer .sectionImgFooter {
+    width: 120%; } }
+>>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
