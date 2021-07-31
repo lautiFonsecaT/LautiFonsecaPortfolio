@@ -9,3 +9,150 @@
     text-transform:capitalize;
     
 }
+@mixin sobreMiUnoMix {
+    grid-area: articleSobreMi__Uno;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+
+                .sectionSobreMi__uno{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80%;
+                    width: 100%;
+
+                    .sobreMiImg__uno{
+                        height: 100%;
+                        width: 50%;
+
+                        img{
+                            display: inline-block;
+                            position: relative;
+                            height: 80%;
+                            top: 6rem;
+                            right: 7rem !important ;
+                            width: 200%;
+                        }
+                    }
+                    .sobreMiDescrip__uno{
+                        display: inline-block;
+                        position: relative;
+                        bottom: 2rem;
+                        height: 100%;
+                        width: 50%;
+                        
+
+                        h2{
+                            font-family: $fuenteTitulos;
+                            font-size: 2rem !important;
+                            text-transform: capitalize;
+                            color: $colorVarianteTitulos;                         
+                        }
+
+                        p{
+                            font-family: $fuentePrincipal;
+                            font-size: 1rem !important;
+                            color: $colorLetrasDefault;
+                            
+                        }
+
+                        
+                    }
+                }
+    
+}
+@mixin sobreMiDosMIX {
+    display: flex;
+                align-items: center;
+                grid-area: articleSobreMi__Dos;
+
+                .sectionSobreMi__dos{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80%;
+                    width: 100%;
+
+                    .sobreMiDescrip__dos{
+                        height: 100%;
+                        width: 50%;
+                        padding-left: 1rem;
+                        top: 1rem;
+
+                        h2{
+                            font-family: $fuenteTitulos;
+                            font-size: 2rem !important;
+                            color: $colorVarianteTitulos;
+                        }
+                        p{
+                            font-family: $fuentePrincipal;
+                            font-size: 1rem !important;
+                            color: $colorLetrasDefault;
+                        }
+                    }
+                    .sobreMiImg__dos{
+                        display: inline-block;
+                        position: relative;
+                        right: 4rem !important;
+
+                        bottom: 2rem;
+                        height: 50%;
+                        width: 50%;
+
+                        img{
+                            left: 5rem !important;
+                            height: 100%;
+                            width: 90%;
+                        }
+
+                    }
+                    
+                }
+    
+}
+@mixin contenedorProyectoMix {
+    .mainContenedorProyecto{
+                
+        .articleContenedor{
+            justify-content: center;
+            flex-direction: column !important  ;
+            
+            .imgProyecto{
+                height: 60%;
+                width: 90%;
+                 
+            }
+            .descripProyecto{
+                padding: 0!important;
+                height: 50%;
+                width: 70%;
+                h2{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+            
+        }
+    }
+    
+}
+@mixin ContenedorContactoMIX {
+    .mainContacto{
+        .formContacto{
+            height: 70%;
+            width: 80%;
+
+            .form-control{
+                width: 80%;
+            }
+            .buttonSubmit{
+                width: auto;
+            }
+        }
+    
+}
+}

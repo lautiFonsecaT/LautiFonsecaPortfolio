@@ -3,9 +3,43 @@
     flex-direction:column ;
         justify-content: center;
         align-items: center;
-        grid-area: footer;
         background-color: $colorFondoHeaderFooter;
         overflow: hidden;
-        height: 100%;
+        height: 350px;
         width: 100%; 
-}
+        .sectionImgFooter{
+            height: 90%;
+            width: 40%;
+
+            img{
+                display: inline-block;
+                position: relative;
+                height: 120%;
+                width: 100%;
+                
+            }
+
+        }
+        .sectionHDosFooter{
+            height: 50%;
+            width: 50%;
+            color: $colorLetrasDefault;
+            font-family:$fuentePrincipal;
+            text-align: center;
+            h2{
+                
+                font-size: 0.9rem;
+            }
+        }
+
+    }
+
+  %sobreMiEXT{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px; 
+    grid-template-areas:"articleSobreMi__Uno"
+                         "articleSobreMi__Dos";
+    background-color: $colorFondoMain;  
+    row-gap: 2rem;
+  }

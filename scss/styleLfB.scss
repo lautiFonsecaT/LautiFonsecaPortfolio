@@ -22,7 +22,7 @@ html{
     background-color: $colorFondoHeaderFooter;
     justify-content: center;
     align-items: center;
-    height:925px;
+    height:100vh;
     width: 100%;
 
     .welcomeArticleContenedor{
@@ -126,10 +126,9 @@ html{
 .divContenedorIdx{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 40% 20%;
+    grid-template-rows: 600px 600px ;
     grid-template-areas: "bienvenida"
-                          "descripcion"
-                           "footer";
+                          "descripcion";
 
     background-color: #193C40;
     width: 100%;
@@ -229,35 +228,9 @@ html{
             }
         }
     }
-    .footer{
-        @extend %extendFooter; 
-
-        .sectionImgFooter{
-            
-            height: 65%;
-            width: 40%;
-
-            img{
-                height: 100%;
-                width: 100%;
-                
-            }
-
-
-        }
-        
-        .sectionHDosFooter{
-            
-            height: 50%;
-            width: 50%;
-            color: $colorLetrasDefault;
-            font-family:$fuentePrincipal;
-            text-align: center;
-            font-size: 1rem;
-        }
-
-
-    }
+}
+.footer{
+    @extend %extendFooter; 
 }
        //sobre mi//
 
@@ -265,10 +238,10 @@ html{
        .contenedorSobreMi{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 40% 40% 20%;
+        grid-template-rows: 600px 600px;
         grid-template-areas:"articleSobreMi__Uno"
                             "articleSobreMi__Dos"
-                            "footer";
+                            ;
         background-color: $colorFondoMain;
         row-gap: 2rem;
 
@@ -363,17 +336,21 @@ html{
                 .sobreMiImg__dos{
                     display: flex;
                     justify-content: center;
-                    height: 60%;
+                    height: 70%;
                     width: 30%;
                     animation-delay:1.5s ;
                     
+                    
 
                     img{
+                        
                         display: inline-block;
                         position: relative;
                         left: 5rem;
+                        
                         height: 100%;
                         width: 100%;
+                        overflow:hidden;
                     }
 
                 }
@@ -381,52 +358,23 @@ html{
             }
         }
 
-        .footer{
-            @extend %extendFooter;
-           
-                
-            .sectionImgFooter{
-                height: 70%;
-                width: 40%;
+    }
     
-                img{
-                    height: 100%;
-                    width: 100%;
-                    
-                }
-    
-            }
-            .sectionHDosFooter{
-                height: 50%;
-                width: 50%;
-                color: $colorLetrasDefault;
-                font-family:$fuentePrincipal;
-                text-align: center;
-                font-size: 0.7rem;
-            }
+    .footer{
+        @extend %extendFooter;
+    }
+        
 
 
-        }
-
-
-
-
-
-                        ///proyecto///
-
-
-       }
+                        ///proyecto//
+      
 
        .contenedorProyecto{
-           display: grid;
-           grid-template-columns: 100%;
-           grid-template-rows: 70% 30%;
-           grid-template-areas: "main"
-                       "footer";
+        height: 900px;
          background-color: $colorFondoMain;            
 
         .mainContenedorProyecto{
-            grid-area: main;
+            
             display: flex;
             height: 100%;
             width: 100%;
@@ -455,7 +403,7 @@ html{
                 }
                 .descripProyecto{
                     display: flex;
-                    padding-right: 1rem;
+                    padding-right: 2rem;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
@@ -482,45 +430,20 @@ html{
             }
             
         }
-        .footer{
-            
-            @extend %extendFooter;
-            .sectionImgFooter{
-                height: 70%;
-                width: 40%;
-    
-                img{
-                    height: 100%;
-                    width: 100%;
-                    
-                }
-    
-            }
-            .sectionHDosFooter{
-                height: 50%;
-                width: 50%;
-                color: $colorLetrasDefault;
-                font-family:$fuentePrincipal;
-                text-align: center;
-                font-size: 0.9rem;
-            }
-
-
-        }
-         
+        
+    }
+    .footer{
+        
+        @extend %extendFooter;
     }
     ////contacto///
     .contenedorContacto{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 70% 30%;
-        grid-template-areas: "main"
-                             "footer";
+        height: 700px;
         background-color: $colorFondoMain;
         
         .mainContacto{
             display: flex;
-            grid-area:main ;
+            
             justify-content: center;
             align-items: center;
 
@@ -574,401 +497,704 @@ html{
             .footer{
                 
             @extend %extendFooter;
-            .sectionImgFooter{
-                height: 70%;
-                width: 40%;
-    
-                img{
-                    display: inline-block;
-                    position: relative;
-                    height: 120%;
-                    width: 100%;
-                    
-                }
-    
-            }
-            .sectionHDosFooter{
-                height: 50%;
-                width: 50%;
-                color: $colorLetrasDefault;
-                font-family:$fuentePrincipal;
-                text-align: center;
-                h2{
-                    
-                    font-size: 0.9rem;
-                }
-            }
-            
-            
         }
     }
 
-    
 
+    .contenedorError{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        width: 100vw;
+        background-color: $colorFondoMain;
 
-
-
-
-@media only screen and (max-width: 360px){
-
-    body{
-        overflow-x: hidden;
-
-    }
-
-    .welcomeContenedor{
-        height: 40rem;
-        width: 100%;
-
-        .welcomeArticleContenedor{
-            .welcomeDivContenedor{
-                .welcomeImg{
-                    width: 20rem;
-                }
-            }
-        }
-    }
-
-    .header{
-        height:5.25rem;
-        
-        .logoContenedor{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            height: 100%;
-            width: 40%;
-
-            img{
-                height: 75%;
-                width: 75%;
-            }
-
-
-        }
-
-        .navContenedor{
-            width: 60%;
-            right: 7rem;
-
-            .navUl li{
-                @include navLi($colorLetrasDefault, 1rem, 1rem, $fuentePrincipal );
-                font-size: 1.05rem;
-            }
-        } 
-    }
-    .divContenedorIdx{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33.3% 33.3% 33.3%;
-        grid-template-areas: "bienvenida"
-                              "descripcion"
-                               "footer";
-
-        .articleSaludo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .sectionSaludo{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 70%;
-                height: 80%;
-
-                .imgSaludo{
-                    width: 120%;
-                    height: 50%;
-                }
-
-                .pSaludo{
-                    padding: 0;
-                    height: 50%;
-                    width: 100%;
-                    text-align: center;
-                    text-transform: capitalize;
-                    font-size: 1.7rem;
-                }
-                }
-        }
-
-
-        .sectionDescripcion{
-            grid-area: descripcion;
+        .descripcionError{
             display: flex;
             flex-direction: column;
-            height: 100%;
-            width: 100%;
-            justify-content: start;
+            height: 80%;
+            width: 80%;
+            justify-content: center;
             align-items: center;
 
-            div{
-                height: 80%;
-                width: 70%;
-                
-                
-            h2{
-                font-size: 4rem;
-                }
-            p{
-
-                font-size: 1.5rem;
+            h1{
+                color:$colorVarianteTitulos;
+                font-family: 'concert one', cursive;
+                font-size: 10rem;
             }
-          }
-        }
+            h2{
+                color: $colorLetrasDefault;
+                font-family: $fuentePrincipal;
+                font-size: 2rem;
+            }
 
-          
-        .footer{
-               grid-area: footer;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               height: 100%;
-               width: 100%;
-               background-color: $colorFondoHeaderFooter ;
-             
-                   
-               .sectionImgFooter{
-                   height: 50%;
-                   width:  120%;
-       
-                   img{
-                       
-                       right: 0rem;
-                       height: 100%;
-                       width: 100%;
-                       
-                   }
-       
-               }
-               .sectionHDosFooter{
-                   height: 50%;
-                   width: 50%;
-                   color: $colorLetrasDefault;
-                   font-family:$fuentePrincipal;
-                   text-align: center;
-                   font-size: 0.7rem;
-               }
-   
-   
-           }
+
+
+
+
+        }
+        
+        
+    }
+    .footer{
+        @extend %extendFooter;
     }
 
 
-        
-        
-        
 
 
-        /// sobre mi ////
+@media only screen and (max-width: 1024px){
 
-        .contenedorSobreMi{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 33.33% 33.33% 33.33% ; 
-            grid-template-areas:"articleSobreMi__Uno"
-                                 "articleSobreMi__Dos"
-                                 "footer";
-            background-color: $colorFondoMain;  
-            row-gap: 2rem;
-            
-            .sobreMi__uno{
-                grid-area: articleSobreMi__Uno;
-                display: flex;
-                align-items: center;
-                height: 100%;
+    .contenedorProyecto{
+        .mainContenedorProyecto{
+            .articleContenedor{
+                height: 50%;
+                width: 80%;
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .header{
+        .navContenedor{
+            justify-content: flex-start;
+            .navUl{
+                justify-content: center;
+                padding: 0;
                 width: 100%;
 
-                .sectionSobreMi__uno{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 80%;
-                    width: 100%;
-
-                    .sobreMiImg__uno{
-                        height: 100%;
-                        width: 50%;
-
-                        img{
-                            display: inline-block;
-                            position: relative;
-                            height: 80%;
-                            top: 6rem;
-                            right: 6rem;
-                            width: 200%;
-                        }
-                    }
-                    .sobreMiDescrip__uno{
-                        display: inline-block;
-                        position: relative;
-                        bottom: 2rem;
-                        height: 100%;
-                        width: 50%;
-                        
-
-                        h2{
-                            font-family: $fuenteTitulos;
-                            font-size: 2rem;
-                            text-transform: capitalize;
-                            color: $colorVarianteTitulos;                         
-                        }
-
-                        p{
-                            font-family: $fuentePrincipal;
-                            font-size: 1rem ;
-                            color: $colorLetrasDefault;
-                            
-                        }
-
-                        
-                    }
-                }
-            }
-            .sobreMi__dos{
-                display: flex;
-                align-items: center;
-                grid-area: articleSobreMi__Dos;
-
-                .sectionSobreMi__dos{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 80%;
-                    width: 100%;
-
-                    .sobreMiDescrip__dos{
-                        height: 100%;
-                        width: 50%;
-                        padding-left: 1rem;
-
-                        h2{
-                            font-family: $fuenteTitulos;
-                            font-size: 2rem;
-                            color: $colorVarianteTitulos;
-                        }
-                        p{
-                            font-family: $fuentePrincipal;
-                            font-size: 1rem;
-                            color: $colorLetrasDefault;
-                        }
-                    }
-                    .sobreMiImg__dos{
-                        display: inline-block;
-                        position: relative;
-                        right: 4rem;
-                        
-                        height: 50%;
-                        width: 50%;
-
-                        img{
-                            height: 100%;
-                            width: 90%;
-                        }
-
-                    }
-                    
+                li{
+                    @include navLi ($colorLetrasDefault, 1.5rem, 1.5rem, $fuentePrincipal);
+                    font-size: 1.2rem;
                 }
 
             }
-            .footer{
-                
-                .sectionImgFooter{
-                    height: 50%;
-                    width: 120%;
-        
-                    img{
-                        
-                        right: 0rem;
-                        height: 100%;
-                        width: 100%;
-                        
-                    }
-        
-                }
-                .sectionHDosFooter{
-                    height: 50%;
-                    width: 50%;
-                    color: $colorLetrasDefault;
-                    font-family:$fuentePrincipal;
-                    text-align: center;
-                    font-size: 0.7rem;
-                }
-
-            }
-
-            //proyecto//
-
         }
-        .contenedorProyecto{
+    }
 
-            .mainContenedorProyecto{
-                
-                .articleContenedor{
-                    justify-content: center;
-                    flex-direction: column ;
-                    
-                    .imgProyecto{
-                        height: 60%;
-                        width: 90%;
-                         
-                    }
-                    .descripProyecto{
-                        padding-left: 1rem;
-                        padding-top: 2rem;
-                        height: 50%;
-                        width: 70%;
-                        h2{
-                            font-size: 3rem;
-                        }
-                        p{
-                            font-size: 1.4rem;
-                        }
-                    }
-                    
+    .divContenedorIdx{
+        .articleSaludo{
+            .sectionSaludo{
+                width: 90%;
+
+                .pSaludo{
+                    padding-right: 2rem;
+                    font-size: 1.8rem;
+                    width: 40%;
                 }
             }
-            .footer{
-                
-                .sectionImgFooter{
-                    height: 50%;
-                    width: 110%;
-        
-                    img{
-                        
-                        right: 0rem;
-                        height: 100%;
-                        width: 100%;
-                        
-                    }
-        
-                }
         }
-                ////contacto///
+        .sectionDescripcion{
+            div{
+                height: 80%;
+                width: 80%;
+            }
+        }
+    }
+    .footer{
+        .sectionImgFooter{
+            height: auto;
+            width: 50%;
+        }
+
+    }
+    .contenedorSobreMi{
+        
+        .sobreMi__uno{
+            
+            @include sobreMiUnoMix;
+            .sobreMiImg__uno{
+               
+                img{
+                    right: 11rem!important;
+
+                }
+            }
+            .sobreMiDescrip__uno{
+                top: 1.5rem !important;
+                h2{
+                    font-size: 3rem !important;
+                }
+                p{
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+        .sobreMi__dos{
+            @include sobreMiDosMIX;
+            .sobreMiDescrip__dos{
+                padding-top: 10rem;
+
+                h2{
+                    font-size: 3rem !important;
+                }
+                p{
+                    font-size:1.5rem !important;
+                }
+            }
+            .sobreMiImg__dos{
+                display: flex !important;
+                justify-content: center;
+                right: 0!important;
+
+                img{
+                    left: 0!important;
+                    width: 80%!important;
+
+                }
+            }
+        }
+    }
+    .contenedorProyecto{
+        @include contenedorProyectoMix;
+
+        .mainContenedorProyecto{
+            .articleContenedor{
+                flex-direction: row !important;
+                width: 70%!important;
+            }
+        }
     }
     .contenedorContacto{
         .mainContacto{
             .formContacto{
-                height: 70%;
-                width: 80%;
-    
-                .form-control{
-                    width: 80%;
-                }
                 .buttonSubmit{
-                    width: auto;
+                    width: 100%;
+
                 }
-            }
-        }
-        .footer{
-            .sectionImgFooter{
-                width: 120%;
             }
         }
     }
+    .contenedorError{
+        overflow-x: hidden;
+        .descripcionError{
+            h1{
+                font-size: 5rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+      }
+
+
+
+    
+
 }
+@media only screen and (max-width: 425px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:20rem;
+        width: 100vw;
+        
+        .logoContenedor{
+            height: 80%;
+            width: 80%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .navContenedor{
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+
+            .navUl{
+                padding: 0;
+            }
+            
+            
+          
+            .navUl li{
+                @include navLi($colorLetrasDefault, 1.5rem, 1.9rem, $fuentePrincipal );
+                font-size: 1rem;
+            }
+        } 
+    }
+    .divContenedorIdx{
+        .articleSaludo{
+            .sectionSaludo{
+                flex-direction: column;
+                width: 80%;
+                height: auto;
+
+                .imgSaludo{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .pSaludo{
+                    padding: 0;
+                    width: 80%;
+                    height: 100%;
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+
+        .sectionDescripcion{
+
+            div{
+                height: 100%;
+                width:90%;
+
+                h2{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 1.8rem;
+
+                    p:focus{
+                        color: $colorVarianteTitulos;
+                        transition: 0.8s;
+                    }
+                }
+
+
+            }
+
+        }
+    
+    }
+
+    .footer{
+        .sectionImgFooter{
+            height: 80%;
+            width: 100%;
+        }
+    }
+
+    ///sobre mi
+
+    .contenedorSobreMi{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px; 
+        grid-template-areas:"articleSobreMi__Uno"
+                             "articleSobreMi__Dos";
+        background-color: $colorFondoMain;  
+        row-gap: 2rem;
+
+        .sobreMi__uno{
+            @include sobreMiUnoMix;
+        }
+        .sobreMi__dos{
+            @include sobreMiDosMIX ;
+        }
+    }
+
+    .contenedorProyecto{
+        @include contenedorProyectoMix;
+         .mainContenedorProyecto{
+             .articleContenedor{
+                 .descripProyecto{
+                     width: 90%;
+                     padding-left:2rem ;
+                 }
+             }
+         }
+    }
+    .contenedorContacto{
+        @include ContenedorContactoMIX;
+    }
+    .contenedorError{
+        .descripcionError{
+            h1{
+                font-size: 5rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+      }
+
+ }
+ @media only screen and(max-width: 375px){
+                
+                    body{
+                        overflow-x: hidden;
+                
+                    }
+                
+                    .welcomeContenedor{
+                        height: 40rem;
+                        width: 100%;
+                
+                        .welcomeArticleContenedor{
+                            .welcomeDivContenedor{
+                                .welcomeImg{
+                                    width: 20rem;
+                                }
+                            }
+                        }
+                    }
+                
+                    .header{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height:20rem;
+                        width: 100vw;
+                        
+                        .logoContenedor{
+                            height: 80%;
+                            width: 80%;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                        .navContenedor{
+                            justify-content: inherit;
+                            align-items: inherit;
+                            padding: 0;
+                            padding-right: 30px;
+                            padding-left: 2rem;
+                        
+                            .navUl li{
+                                @include navLi($colorLetrasDefault, 1rem, 1rem, $fuentePrincipal );
+                                font-size: 1.05rem;
+                            }
+                        } 
+                    }
+                    .divContenedorIdx{
+                        display: grid;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 500px 400px;
+                        grid-template-areas: "bienvenida"
+                                              "descripcion";
+                
+                        .articleSaludo{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                
+                            .sectionSaludo{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 70%;
+                                height: 80%;
+                
+                                .imgSaludo{
+                                    width: 120%;
+                                    height: 50%;
+                                }
+                
+                                .pSaludo{
+                                    padding: 0;
+                                    height: 50%;
+                                    width: 100%;
+                                    text-align: center;
+                                    text-transform: capitalize;
+                                    font-size: 1.7rem;
+                                }
+                                }
+                        }
+                
+                
+                        .sectionDescripcion{
+                            grid-area: descripcion;
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            justify-content: start;
+                            align-items: center;
+                
+                            div{
+                                height: 80%;
+                                width: 70%;
+                                
+                                
+                            h2{
+                                font-size: 4rem;
+                                }
+                            p{
+                
+                                font-size: 1.5rem;
+                            }
+                          }
+                        }
+                
+                          
+                        
+                        
+                    }
+                    .footer{
+                           
+                           flex-direction: column;
+                           justify-content: center;
+                           align-items: center;
+                           height: 100%;
+                           width: 100%;
+                           background-color: $colorFondoHeaderFooter ;
+                         
+                               
+                           .sectionImgFooter{
+                               height: 50%;
+                               width:  120%;
+                   
+                               img{
+                                   
+                                   right: 0rem;
+                                   height: 100%;
+                                   width: 100%;
+                                   
+                               }
+                   
+                           }
+                           .sectionHDosFooter{
+                               height: 50%;
+                               width: 50%;
+                               color: $colorLetrasDefault;
+                               font-family:$fuentePrincipal;
+                               text-align: center;
+                               font-size: 0.7rem;
+                           }
+                    }
+                
+                
+                        
+                        
+                        
+                
+                
+                        /// sobre mi ////
+                
+                        .contenedorSobreMi{
+                            display: grid;
+                            grid-template-columns: 100%;
+                            grid-template-rows: 400px 400px; 
+                            grid-template-areas:"articleSobreMi__Uno"
+                                                 "articleSobreMi__Dos";
+                            background-color: $colorFondoMain;  
+                            row-gap: 2rem;
+                            
+                            .sobreMi__uno{
+                                grid-area: articleSobreMi__Uno;
+                                display: flex;
+                                align-items: center;
+                                height: 100%;
+                                width: 100%;
+                
+                                .sectionSobreMi__uno{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 80%;
+                                    width: 100%;
+                
+                                    .sobreMiImg__uno{
+                                        height: 100%;
+                                        width: 50%;
+                
+                                        img{
+                                            display: inline-block;
+                                            position: relative;
+                                            height: 80%;
+                                            top: 6rem;
+                                            right: 7rem;
+                                            width: 200%;
+                                        }
+                                    }
+                                    .sobreMiDescrip__uno{
+                                        display: inline-block;
+                                        position: relative;
+                                        bottom: 2rem;
+                                        height: 100%;
+                                        width: 50%;
+                                        
+                
+                                        h2{
+                                            font-family: $fuenteTitulos;
+                                            font-size: 2rem;
+                                            text-transform: capitalize;
+                                            color: $colorVarianteTitulos;                         
+                                        }
+                
+                                        p{
+                                            font-family: $fuentePrincipal;
+                                            font-size: 1rem ;
+                                            color: $colorLetrasDefault;
+                                            
+                                        }
+                
+                                        
+                                    }
+                                }
+                            }
+                            .sobreMi__dos{
+                                display: flex;
+                                align-items: center;
+                                grid-area: articleSobreMi__Dos;
+                
+                                .sectionSobreMi__dos{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 80%;
+                                    width: 100%;
+                
+                                    .sobreMiDescrip__dos{
+                                        height: 100%;
+                                        width: 50%;
+                                        padding-left: 1rem;
+                                        top: 1rem;
+                
+                                        h2{
+                                            font-family: $fuenteTitulos;
+                                            font-size: 2rem;
+                                            color: $colorVarianteTitulos;
+                                        }
+                                        p{
+                                            font-family: $fuentePrincipal;
+                                            font-size: 1rem;
+                                            color: $colorLetrasDefault;
+                                        }
+                                    }
+                                    .sobreMiImg__dos{
+                                        display: inline-block;
+                                        position: relative;
+                                        right: 4rem;
+                                        bottom: 2rem;
+                                        height: 50%;
+                                        width: 50%;
+                
+                                        img{
+                                            height: 100%;
+                                            width: 90%;
+                                        }
+                
+                                    }
+                                    
+                                }
+                
+                            }
+                            
+                        }
+                        .footer{
+                            
+                            .sectionImgFooter{
+                                height: 80%;
+                                width: 120%;
+                    
+                                img{
+                                    
+                                    right: 0rem;
+                                    height: 100%;
+                                    width: 100%;
+                                    
+                                }
+                    
+                            }
+                            .sectionHDosFooter{
+                                height: 50%;
+                                width: 50%;
+                                color: $colorLetrasDefault;
+                                font-family:$fuentePrincipal;
+                                text-align: center;
+                                font-size: 0.7rem;
+                            }
+                        }
+                            //proyecto//
+                
+                        
+                        .contenedorProyecto{
+                
+                            .mainContenedorProyecto{
+                                
+                                .articleContenedor{
+                                    justify-content: center;
+                                    flex-direction: column ;
+                                    
+                                    .imgProyecto{
+                                        height: 60%;
+                                        width: 90%;
+                                         
+                                    }
+                                    .descripProyecto{
+                                        padding-left: 1rem;
+                                        padding-top: 2rem;
+                                        height: 50%;
+                                        width: 70%;
+                                        h2{
+                                            font-size: 3rem;
+                                        }
+                                        p{
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            .footer{
+                                
+                                .sectionImgFooter{
+                                    height: 50%;
+                                    width: 110%;
+                        
+                                    img{
+                                        
+                                        right: 0rem;
+                                        height: 100%;
+                                        width: 100%;
+                                        
+                                    }
+                        
+                                }
+                        }
+                                ////contacto///
+                    }
+                    .contenedorContacto{
+                        .mainContacto{
+                            .formContacto{
+                                height: 70%;
+                                width: 80%;
+                    
+                                .form-control{
+                                    width: 80%;
+                                }
+                                .buttonSubmit{
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                    .footer{
+                        .sectionImgFooter{
+                            width: 120%;
+                        }
+                    }
+                
+                    .contenedorError{
+                      .descripcionError{
+                          h1{
+                              font-size: 5rem;
+                          }
+                          h2{
+                              font-size: 1.5rem;
+                          }
+                      }
+                    }
+                   
+                
+                
+}
+
+
 
 
 
