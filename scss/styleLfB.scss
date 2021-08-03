@@ -216,28 +216,6 @@ html{
                 font-family: $fuentePrincipal;
                 color: $colorLetrasDefault;
                 text-align: center;
-<<<<<<< HEAD
-=======
-
-                a{
-                    color:$colorLetrasDefault;
-                }
-                a:hover{
-                    color: $colorVarianteTitulos;
-                    transition: 1s;
-                }
-                
-            }
-        }
-    }
-    .footer{
-        @extend %extendFooter; 
-
-        .sectionImgFooter{
-            
-            height: 65%;
-            width: 40%;
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
 
                 a{
                     color:$colorLetrasDefault;
@@ -452,7 +430,6 @@ html{
             }
             
         }
-<<<<<<< HEAD
         
     }
     .footer{
@@ -462,42 +439,6 @@ html{
     ////contacto///
     .contenedorContacto{
         height: 700px;
-=======
-        .footer{
-            
-            @extend %extendFooter;
-            .sectionImgFooter{
-                height: 70%;
-                width: 40%;
-    
-                img{
-                    height: 100%;
-                    width: 100%;
-                    
-                }
-    
-            }
-            .sectionHDosFooter{
-                height: 50%;
-                width: 50%;
-                color: $colorLetrasDefault;
-                font-family:$fuentePrincipal;
-                text-align: center;
-                font-size: 0.9rem;
-            }
-
-
-        }
-         
-    }
-    ////contacto///
-    .contenedorContacto{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 70% 30%;
-        grid-template-areas: "main"
-                             "footer";
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
         background-color: $colorFondoMain;
         
         .mainContacto{
@@ -583,7 +524,6 @@ html{
             }
             h2{
                 color: $colorLetrasDefault;
-<<<<<<< HEAD
                 font-family: $fuentePrincipal;
                 font-size: 2rem;
             }
@@ -616,7 +556,6 @@ html{
     }
 
 }
-
 @media only screen and (max-width: 768px){
 
     .header{
@@ -630,17 +569,9 @@ html{
                 li{
                     @include navLi ($colorLetrasDefault, 1.5rem, 1.5rem, $fuentePrincipal);
                     font-size: 1.2rem;
-=======
-                font-family:$fuentePrincipal;
-                text-align: center;
-                h2{
-                    
-                    font-size: 0.9rem;
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
                 }
 
             }
-<<<<<<< HEAD
         }
     }
 
@@ -648,15 +579,6 @@ html{
         .articleSaludo{
             .sectionSaludo{
                 width: 90%;
-=======
-            
-            
-        }
-    }
-
-    
-
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
 
                 .pSaludo{
                     padding-right: 2rem;
@@ -1266,37 +1188,9 @@ html{
                           }
                       }
                     }
-<<<<<<< HEAD
                    
                 
                 
-=======
-        
-                }
-        }
-                ////contacto///
-    }
-    .contenedorContacto{
-        .mainContacto{
-            .formContacto{
-                height: 70%;
-                width: 80%;
-    
-                .form-control{
-                    width: 80%;
-                }
-                .buttonSubmit{
-                    width: auto;
-                }
-            }
-        }
-        .footer{
-            .sectionImgFooter{
-                width: 120%;
-            }
-        }
-    }
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
 }
 
 

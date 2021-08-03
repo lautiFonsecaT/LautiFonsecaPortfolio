@@ -115,7 +115,8 @@ html {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 600px 600px;
-  grid-template-areas: "bienvenida" "descripcion";
+  grid-template-areas: "bienvenida"
+ "descripcion";
   background-color: #193C40;
   width: 100%;
   height: 100rem; }
@@ -187,28 +188,13 @@ html {
         .divContenedorIdx .sectionDescripcion div p a:hover {
           color: #ffbb00;
           transition: 1s; }
-<<<<<<< HEAD
-=======
-  .divContenedorIdx .footer .sectionImgFooter {
-    height: 65%;
-    width: 40%; }
-    .divContenedorIdx .footer .sectionImgFooter img {
-      height: 100%;
-      width: 100%; }
-  .divContenedorIdx .footer .sectionHDosFooter {
-    height: 50%;
-    width: 50%;
-    color: white;
-    font-family: "Sulphur Point", sans-serif;
-    text-align: center;
-    font-size: 1rem; }
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
 
 .contenedorSobreMi {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 600px 600px;
-  grid-template-areas: "articleSobreMi__Uno" "articleSobreMi__Dos";
+  grid-template-areas: "articleSobreMi__Uno"
+ "articleSobreMi__Dos";
   background-color: #193C40;
   row-gap: 2rem; }
   .contenedorSobreMi .sobreMi__uno {
@@ -371,7 +357,6 @@ html {
           font-family: "Sulphur Point", sans-serif;
           font-weight: bold;
           background-color: rgba(0, 0, 0, 0.446); }
-<<<<<<< HEAD
 
 .contenedorError {
   display: flex;
@@ -398,17 +383,6 @@ html {
 
 @media only screen and (max-width: 1024px) {
   .contenedorProyecto .mainContenedorProyecto .articleContenedor {
-=======
-  .contenedorContacto .footer .sectionImgFooter {
-    height: 70%;
-    width: 40%; }
-    .contenedorContacto .footer .sectionImgFooter img {
-      display: inline-block;
-      position: relative;
-      height: 120%;
-      width: 100%; }
-  .contenedorContacto .footer .sectionHDosFooter {
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
     height: 50%;
     width: 80%; } }
 
@@ -618,7 +592,8 @@ html {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 400px 400px;
-    grid-template-areas: "articleSobreMi__Uno" "articleSobreMi__Dos";
+    grid-template-areas: "articleSobreMi__Uno"
+ "articleSobreMi__Dos";
     background-color: #193C40;
     row-gap: 2rem; }
     .contenedorSobreMi .sobreMi__uno {
@@ -762,7 +737,8 @@ html {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 500px 400px;
-    grid-template-areas: "bienvenida" "descripcion"; }
+    grid-template-areas: "bienvenida"
+ "descripcion"; }
     .divContenedorIdx .articleSaludo {
       display: flex;
       align-items: center;
@@ -824,7 +800,8 @@ html {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 400px 400px;
-    grid-template-areas: "articleSobreMi__Uno" "articleSobreMi__Dos";
+    grid-template-areas: "articleSobreMi__Uno"
+ "articleSobreMi__Dos";
     background-color: #193C40;
     row-gap: 2rem; }
     .contenedorSobreMi .sobreMi__uno {
@@ -940,14 +917,9 @@ html {
       width: 80%; }
     .contenedorContacto .mainContacto .formContacto .buttonSubmit {
       width: auto; }
-<<<<<<< HEAD
   .footer .sectionImgFooter {
     width: 120%; }
   .contenedorError .descripcionError h1 {
     font-size: 5rem; }
   .contenedorError .descripcionError h2 {
     font-size: 1.5rem; } }
-=======
-  .contenedorContacto .footer .sectionImgFooter {
-    width: 120%; } }
->>>>>>> a19c4d9402a07c0e414478890046fa2760ebc10a
